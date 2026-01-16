@@ -277,7 +277,7 @@ inline const wxString Model_Checking::type_name(int id)
 
 inline const wxString Model_Checking::trade_type_name(int id)
 {
-    return TRADE_TYPE_CHOICES.getName(id);
+    return wxGetTranslation(TRADE_TYPE_CHOICES.getName(id));
 }
 
 inline int Model_Checking::type_id(const wxString& name, int default_id)
@@ -346,4 +346,4 @@ inline bool Model_Checking::Full_Data::has_attachment() const
     return !ATTACHMENT_DESCRIPTION.empty();
 }
 
-#endif // 
+#endif //
